@@ -13,6 +13,8 @@
 		6CBE6C301CA01C03006D361C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CBE6C2E1CA01C03006D361C /* Main.storyboard */; };
 		6CBE6C321CA01C03006D361C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CBE6C311CA01C03006D361C /* Assets.xcassets */; };
 		6CBE6C351CA01C03006D361C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CBE6C331CA01C03006D361C /* LaunchScreen.storyboard */; };
+		6CBE6C611CA047AD006D361C /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CBE6C601CA047AD006D361C /* Place.m */; };
+		6CBE6C631CA049D4006D361C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBE6C621CA049D4006D361C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		6CBE6C311CA01C03006D361C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CBE6C341CA01C03006D361C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CBE6C361CA01C03006D361C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CBE6C5F1CA047AD006D361C /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		6CBE6C601CA047AD006D361C /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		6CBE6C621CA049D4006D361C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CBE6C631CA049D4006D361C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 		6CBE6C191CA01C02006D361C = {
 			isa = PBXGroup;
 			children = (
+				6CBE6C621CA049D4006D361C /* MapKit.framework */,
 				6CBE6C241CA01C03006D361C /* 第19章Core Location和 Map Kit */,
 				6CBE6C231CA01C03006D361C /* Products */,
 			);
@@ -62,6 +69,8 @@
 				6CBE6C291CA01C03006D361C /* AppDelegate.m */,
 				6CBE6C2B1CA01C03006D361C /* ViewController.h */,
 				6CBE6C2C1CA01C03006D361C /* ViewController.m */,
+				6CBE6C5F1CA047AD006D361C /* Place.h */,
+				6CBE6C601CA047AD006D361C /* Place.m */,
 				6CBE6C2E1CA01C03006D361C /* Main.storyboard */,
 				6CBE6C311CA01C03006D361C /* Assets.xcassets */,
 				6CBE6C331CA01C03006D361C /* LaunchScreen.storyboard */,
@@ -153,6 +162,7 @@
 				6CBE6C2D1CA01C03006D361C /* ViewController.m in Sources */,
 				6CBE6C2A1CA01C03006D361C /* AppDelegate.m in Sources */,
 				6CBE6C271CA01C03006D361C /* main.m in Sources */,
+				6CBE6C611CA047AD006D361C /* Place.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "第19章Core Location和 Map Kit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lyz.-19-Core-Location--Map-Kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "第19章Core Location和 Map Kit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lyz.-19-Core-Location--Map-Kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
