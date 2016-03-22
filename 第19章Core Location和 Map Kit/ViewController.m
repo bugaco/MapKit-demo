@@ -72,7 +72,7 @@
         region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 100, 100);
         [self.mapView setRegion:region animated:YES];
     }else{
-        self.totalMovementDistance = [newLocation distanceFromLocation:self.previousPoint];
+        self.totalMovementDistance += [newLocation distanceFromLocation:self.previousPoint];
     }
     self.previousPoint = newLocation;
     NSString *distanceString = [NSString stringWithFormat:@"%gm", [newLocation distanceFromLocation:self.previousPoint] ];
